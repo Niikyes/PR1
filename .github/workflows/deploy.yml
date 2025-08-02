@@ -63,6 +63,6 @@ jobs:
             sudo docker image prune -f
 
             echo "Iniciando contenedores..."
-            sudo docker run -d --name pr1-backend -p 5000:5000 ${{ secrets.DOCKERHUB_USER }}/pr1-backend
+            sudo docker run -d --name pr1-backend -p 8080:8080 ${{ secrets.DOCKERHUB_USER }}/pr1-backend
             sudo docker run -d --name pr1-frontend -p 80:80 ${{ secrets.DOCKERHUB_USER }}/pr1-frontend
 

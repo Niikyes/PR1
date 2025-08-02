@@ -5,7 +5,7 @@ function App() {
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {
-    axios.get('http://<EC2_PUBLIC_IP>:5000/weather') // Cambiar por la IP de tu EC2 en producción
+    axios.get('http://3.94.118.27:8080/weather') // IP de EC2 
       .then(res => setWeather(res.data))
       .catch(err => console.error(err));
   }, []);

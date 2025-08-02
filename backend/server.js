@@ -1,10 +1,13 @@
 import express from "express";
 import cors from "cors";
 import axios from "axios";
- 
+import dotenv from "dotenv";
+
+dotenv.config(); // Carga variables de .env
+
 const app = express();
 app.use(cors());
- 
+
 app.get("/weather", async (req, res) => {
   try {
     const response = await axios.get(
@@ -16,6 +19,7 @@ app.get("/weather", async (req, res) => {
   }
 });
 
-const PORT = 5000;
+//Lee el puerto desde .env o usa 5000 por defecto
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
 
