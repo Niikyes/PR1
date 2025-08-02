@@ -12,7 +12,7 @@ Este proyecto es una aplicación de prueba desarrollada como parte del estudio d
 PR1/
 ├── backend/ # API en Node.js que consume datos de Open-Meteo
 ├── frontend/ # Interfaz React que muestra información del clima
-├── .github/ # Workflows para CI/CD con GitHub Actions
+├── .github/ # Workflows para CI/CD con GitHub Action
 
 ## 🔧 Despliegue automático  
 Cada vez que se hace push a la rama `test`:  
