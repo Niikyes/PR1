@@ -1,5 +1,5 @@
 {
-  "name": "weather-backend",
+  "name": "pr1-backend",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
@@ -12,3 +12,4 @@
     "cors": "^2.8.5"
   }
 }
+
